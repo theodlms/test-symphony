@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+{{ parent() ~ ' - ' ~ param1 }}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+Lucky number:{{ param1 }}
+</div>
+<a href="{{ path('hellopage') }}">Lien page hello</a>
+{% endblock %}
